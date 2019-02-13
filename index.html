@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Carousel Sample</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <h3 class="carousel-slide_title">Header of the First Slide</h3>
+                <img class="carousel-slide_image" src="https://picsum.photos/800/400/?random" alt="sample image 1">
+                <p class="carousel-slide_caption">This is the caption of the first slide.</p>
+            </div>
+            <div class="carousel-slide">
+                <h3 class="carousel-slide_title">Header of the Second Slide</h3>
+                <img class="carousel-slide_image" src="https://picsum.photos/800/399/?random" alt="sample image 2">
+                <p class="carousel-slide_caption">This is the caption of the second slide.</p>
+            </div>
+            <div class="carousel-slide">
+                <h3 class="carousel-slide_title">Header of the Third Slide</h3>
+                <img class="carousel-slide_image" src="https://picsum.photos/800/401/?random" alt="sample image 3">
+                <p class="carousel-slide_caption">This is the caption of the third slide.</p>
+            </div>
+            <a class="carousel-previous" onclick="nextSlide(-1)">&lt;</a>
+            <a class="carousel-next" onclick="nextSlide(1)">&gt;</a>
+        </div>
+        <ol id="carousel-indicators"></ol>
+    </div>
+    <script src="carousel.js"></script>
+</body>
+</html>
